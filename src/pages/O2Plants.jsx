@@ -55,7 +55,10 @@ const O2Plants = () => {
             mt-[350px] md:mt-[250px] lg:mt-0
             lg:ml-[450px]
             xl:ml-[650px]
-            p-16
+            p-5
+            xl:p-16
+            lg:p-16
+            md:p-16
             z-20
           ">
             

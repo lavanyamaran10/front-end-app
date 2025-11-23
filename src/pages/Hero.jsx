@@ -9,18 +9,18 @@ import girlImg from "../assets/girlimg.png";
 
 const Hero = () => {
   return (
-    <div className="w-full flex flex-col md:flex-row gap-[clamp(16px,calc((100vw/1728)*40),40px)] p-[clamp(16px,calc((100vw/1728)*32),32px)] bg-gradient-to-br max-w-full overflow-x-hidden">
+    <div className="w-full flex flex-col md:flex-row gap-[clamp(16px,calc((100vw/1728)*40),40px)] p-[clamp(16px,calc((100vw/1728)*32),32px)] bg-gradient-to-br max-w-full overflow-x-hidden justify-center items-center pt-20">
 
       {/* LEFT SIDE */}
       <div className="flex flex-col flex-1 gap-[clamp(40px,calc((100vw/1728)*144),144px)] justify-between py-[clamp(16px,calc((100vw/1728)*48),48px)] min-w-0 items-center md:items-start text-center md:text-left">
 
         {/* Main Text */}
         <div className="space-y-[clamp(12px,calc((100vw/1728)*24),24px)]">
-
+{/* text-[clamp(48px,calc((100vw/1728)*118),118px)] */}
           {/* Headline */}
           <p className="
             text-white font-inter font-semibold leading-[100%] break-words
-            text-[clamp(48px,calc((100vw/1728)*118),118px)]
+             xl:text[118px] lg:text-[85px] md:text-[65px] text-[30px]
           ">
             Earth's Exhale
           </p>

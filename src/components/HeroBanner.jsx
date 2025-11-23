@@ -2,14 +2,20 @@ import React from "react";
 
 const HeroBanner = ({ imageUrl, imageAlt, children }) => {
   return (
-    <div className="relative w-[512px] h-[644px]">
+    <div className="relative mx-auto
+      w-[320px] h-[450px]  /* default for small screens */
+     /*  md:w-[420px] md:h-[520px]  medium screens */
+      lg:w-[420px] lg:h-[520px]   /*large screens */
+      2xl:w-[512px] 2xl:h-[644px]
+  
       
+    ">
       {/* ===== BEHIND BORDER GLOW ===== */}
       <div
         className="absolute z-[-1]"
         style={{
-          width: "440px",
-          height: "540px",
+          width: "calc(100% - 72px)", // adapt to parent width
+          height: "calc(100% - 104px)",
           top: "-10px",
           left: "-10px",
           background:
@@ -21,9 +27,11 @@ const HeroBanner = ({ imageUrl, imageAlt, children }) => {
 
       {/* ===== MAIN SHAPE WITH BORDER (SVG) ===== */}
       <svg
-        width="420"
-        height="520"
-        className="absolute z-0 top-[62px] left-[46px]"
+        className="absolute z-0"
+        width="100%"
+        height="100%"
+        viewBox="0 0 420 520"
+        preserveAspectRatio="none"
       >
         <defs>
           <linearGradient id="gradBorder" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -41,7 +49,7 @@ const HeroBanner = ({ imageUrl, imageAlt, children }) => {
       </svg>
 
       {/* ===== IMAGE INSIDE SHAPE ===== */}
-      <div className="absolute top-[-110px] left-[46px] w-[420px] h-[520px] flex items-center justify-center z-10">
+      <div className="absolute sm:top-[-24%] top-[-20%] left-[8%] w-[84%] h-[80%] flex items-center justify-center z-10">
         <img
           src={imageUrl}
           alt={imageAlt}
@@ -60,19 +68,10 @@ const HeroBanner = ({ imageUrl, imageAlt, children }) => {
       </div>
 
       {/* ===== CHILDREN TEXT INSIDE SHAPE ===== */}
-      <div className="absolute top-[140px] left-[46px] w-[420px] h-[520px] flex flex-col justify-between items-center px-6 py-12 text-white z-20">
-        <div className="basis-1/3">
-
-        </div>
-
-        <div className="basis-2/3 ">
-
-        {children}
-        </div>
+      <div className="absolute top-[25%] left-[8%] w-[84%] h-[80%] flex flex-col justify-between items-center px-6 py-12 text-white z-20">
+        <div className="basis-1/3 "></div>
+        <div className="basis-2/3">{children}</div>
       </div>
-
-
-
     </div>
   );
 };
