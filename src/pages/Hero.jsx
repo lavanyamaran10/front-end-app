@@ -5,7 +5,7 @@ import rosegold from "../assets/rosegold.png";
 import HalfStar from "../components/HalfStar";
 import StarIcon from "@mui/icons-material/Star";
 import rightArrow from "../assets/rightarrow.png";
-import girlImg from "../assets/girlImg.png";
+import girlImg from "../assets/girlimg.png";
 
 const Hero = () => {
   return (
