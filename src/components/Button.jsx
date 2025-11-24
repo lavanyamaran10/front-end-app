@@ -22,6 +22,8 @@ const Button = ({
         text-[15px] 
         leading-[100%] 
         cursor-pointer
+        hover:bg-white transition-colors
+         hover:text-[#1B2317]
       `}
     >
       {label}

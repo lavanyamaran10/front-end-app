@@ -3,7 +3,7 @@ import plant from "../assets/plant.png";
 
 const Footer = () => {
   return (
-    <div className="w-full bg-[#1A231B] text-white py-10 px-10  flex flex-col gap-20 overflow-x-hidden max-w-full">
+    <div className="w-full bg-[#1B2317] text-white py-10 px-10  flex flex-col gap-20 overflow-x-hidden max-w-full">
 
       {/* ================= LEFT BLOCK ================= */}
       <div className="w-full flex flex-col lg:flex-row  justify-between items-center gap-5 min-w-0">
@@ -67,7 +67,7 @@ const Footer = () => {
               className="w-full bg-transparent px-5 xl:text-[24px] lg:text-[18px] md:text-[18px] text-[18px] font-inter font-medium outline-none placeholder-white"
             />
 
-            <button className="bg-white text-black px-8 h-full font-inter font-bold xl:text-[22px] lg:text-[19px] md:text-[19px] text-[16px] uppercase">
+            <button className="bg-white text-black  px-8 h-full font-inter font-bold xl:text-[22px] lg:text-[19px] md:text-[19px] text-[16px] uppercase">
               Subscribe
             </button>
           </div>

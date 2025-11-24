@@ -42,6 +42,7 @@ const Hero = () => {
                 rounded-full border-2 border-white flex items-center justify-center relative group
                 w-[clamp(40px,calc((100vw/1728)*56),56px)]
                 h-[clamp(40px,calc((100vw/1728)*56),56px)]
+                hover:bg-white transition-colors
               ">
 
                 {/* Play Icon */}
