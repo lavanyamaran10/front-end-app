@@ -16,10 +16,8 @@ const TopSellingPlant = () => {
 
       {/* GRID */}
       <div
-        className="w-full max-w-full m-16 grid grid-cols-1 gap-16  lg:grid-cols-2 lg:grid-rows-3  xxl:grid-cols-3 xxl:grid-rows-2 justify-center items-center "
-        style={{
-          gridAutoRows: "auto",
-        }}
+         className="top-grid w-full max-w-full m-16 grid grid-cols-1 gap-16 md:grid-col-2 md:grid-rows-2 lg:grid-cols-3 lg:grid-rows-2 xxl:grid-cols-3 xxl:grid-rows-2 justify-center items-center"
+ 
       >
         {plants.map((plant, index) => (
           <HeroBanner

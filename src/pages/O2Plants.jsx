@@ -34,10 +34,10 @@ const O2Plants = () => {
             top-[-65px] left-1/2 -translate-x-1/2
             md:top-[-106px]
             lg:top-[-140px] lg:left-[-80px] lg:translate-x-0
-            w-[450px] h-[450px]
+            w-[400px] h-[400px]
             md:w-[450px] md:h-[450px]
-            lg:w-[750px] lg:h-[750px]
-            xl:w-[877px] xl:h-[877px]
+            lg:w-[620px] lg:h-[620px]
+            xxl:w-[877px] xl:h-[877px]
             z-10
             flex items-center justify-center
           ">
@@ -54,8 +54,8 @@ const O2Plants = () => {
             text-white gap-4 md:gap-6
             mt-[350px] md:mt-[250px] lg:mt-0
             lg:ml-[450px]
-            xl:ml-[650px]
-            p-5
+            xxl:ml-[650px]
+            p-4
             xl:p-16
             lg:p-16
             md:p-16
@@ -64,17 +64,17 @@ const O2Plants = () => {
             
 
             
-            <h2 className="font-inter font-semibold text-[24px] md:text-[32px] lg:text-[38px] leading-[100%]">
+            <h2 className="font-inter font-semibold text-[24px] lg:text-[30px] xxl:text-[38px] leading-[100%]">
               We Have Small And Best O2 Plants Collection's
             </h2>
 
-            <p className="font-inter font-semibold text-[16px] md:text-[22px] lg:text-[28px] text-white/80 leading-[100%]">
+            <p className="font-inter font-semibold text-[16px] lg:text-[22px] xxl:text-[28px] text-white/80 leading-[100%]">
               Oxygen-producing plants, often referred to as "O2 plants," are those
               that release oxygen into the atmosphere through the process of
               photosynthesis.
             </p>
 
-            <p className="font-inter font-semibold text-[16px] md:text-[22px] lg:text-[28px] text-white/80 leading-[100%]">
+            <p className="font-inter font-semibold text-[16px] lg:text-[22px] xxl:text-[28px] text-white/80 leading-[100%]">
               Many plants can help filter out pollutants and toxins from the air,
               such as formaldehyde, benzene, and trichloroethylene. This makes the
               air cleaner and healthier to breathe.

@@ -5,11 +5,10 @@ const TestimonialCard = ({ children }) => {
     <div
       className={`
         relative 
-        w-[512px] h-[480px]
-        sm:w-[360px] sm:h-[340px]
-        md:w-[420px] md:h-[400px]
+        w-[360px] h-[360px]
+
         lg:w-[420px] lg:h-[400px]
-        xl:w-[512px] xl:h-[480px]
+        xxl:w-[512px] xl:h-[480px]
       `}
     >
       {/* GLOW BEHIND */}
@@ -17,11 +16,8 @@ const TestimonialCard = ({ children }) => {
         className={`
           absolute z-[-1]
           w-full h-full
-
-          sm:w-[360px] sm:h-[340px]
-          md:w-[360px] md:h-[340px]
           lg:w-[360px] lg:h-[340px]
-          xl:w-[512px] xl:h-[480px]
+          xxl:w-[512px] xl:h-[480px]
         `}
         style={{
           top: "-15px",
