@@ -2,14 +2,18 @@ import React from "react";
 
 const HeroBanner = ({ imageUrl, imageAlt, children }) => {
   return (
-    <div className="relative mx-auto
-      w-[320px] h-[450px]  /* default for small screens */
-     /*  md:w-[420px] md:h-[520px]  medium screens */
-      lg:w-[420px] lg:h-[520px]   /*large screens */
-      2xl:w-[512px] 2xl:h-[644px]
-  
-      
-    ">
+    <div
+      className="relative mx-auto
+    /* Default (<1024px) */
+    w-[320px] h-[450px]
+
+    /* >=1024px (lg) and <1700px */
+    lg:w-[420px] lg:h-[520px]
+
+    /* >=1700px (custom breakpoint) */
+    xxl:w-[512px] xxl:h-[644px]
+    "
+    >
       {/* ===== BEHIND BORDER GLOW ===== */}
       <div
         className="absolute z-[-1]"

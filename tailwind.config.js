@@ -13,8 +13,10 @@ export default {
         'indie-flower': ['Indie Flower', 'cursive'],
         'inter': ['Inter', 'sans-serif'],
       },
-    },
+      screens: {
+        'xxl': '1700px',
+      },
   },
   plugins: [],
 }
-
+};

@@ -8,7 +8,7 @@ const TopSellingPlant = () => {
   const plants = mapPlants(); // ← GET ALL PLANTS
 
   return (
-    <div className="w-full flex flex-col gap-32  overflow-x-hidden justify-center items-center p-20">
+    <div className="w-full flex flex-col gap-32  overflow-x-hidden justify-center items-center">
       {/* Section Title */}
       <div className="w-full flex justify-center p-10">
         <SectionTitle text="Our Top Selling Plants" />
@@ -16,7 +16,7 @@ const TopSellingPlant = () => {
 
       {/* GRID */}
       <div
-        className="w-full max-w-full grid grid-cols-1 gap-16 sm:grid-cols-1 md:grid-cols-1 justify-center items-center "
+        className="w-full max-w-full m-16 grid grid-cols-1 gap-16  lg:grid-cols-2 lg:grid-rows-3  xxl:grid-cols-3 xxl:grid-rows-2 justify-center items-center "
         style={{
           gridAutoRows: "auto",
         }}
